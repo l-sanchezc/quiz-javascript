@@ -1,0 +1,35 @@
+<form method="POST" action="/quiz/delete">
+
+  <input type="hidden"
+         name="_method"
+         value="DELETE">        
+  <p>
+<h3>Escoger la pregunta</h3>
+  <p>
+  <select name="preg">
+  <%r1%>
+  </select>
+<h3>Borrar la pregunta</h3>
+   <input type="submit" value="Borrar">
+</form>
+
+<form method="POST" action="/quiz/update">
+     <input type="hidden"
+         name="_method"
+         value="PUT">  
+<h3>Escoger la pregunta</h3>
+  <p>
+  <select name="preg">
+  <%r1%>
+  </select>    
+  <p>
+<h3>Modificar la respuesta</h3>  
+  <p>
+  <input type="text"
+         name="resp"
+         value="Respuesta"
+         size="20">
+  <p>
+  <p>
+  <input type="submit" value="Modificar">
+</form>
